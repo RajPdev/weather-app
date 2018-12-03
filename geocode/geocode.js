@@ -5,7 +5,7 @@ const geocodeAddress = (address, callback) => {
 	const encodedAddress = encodeURIComponent(address);
 
 	request({
-		url: `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=AIzaSyDepK3wyCVBUqbE2_zCeHqCK4JWcvIM4SM`,
+		url: `https://maps.googleapis.com/maps/api/geocode/json?address=${encodedAddress}&key=GOOGLEAPIKEY`,
 		json: true
 	}, (error, response, body) => {
 		if (error) {
